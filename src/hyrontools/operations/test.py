@@ -1,6 +1,5 @@
 import hyron
 from .operation import Operation
-from ..errors import ValidationError
 
 
 class TestRulebook(Operation, register="test"):
@@ -19,8 +18,8 @@ class TestRulebook(Operation, register="test"):
         }
 
     def run(self, rulebook: hyron.rulebooks.Rulebook, artifact: str):
-        self.console.print(f"Rendering all artifacts...")
+        self.console.print("Rendering all artifacts...")
 
-        artifact = rulebook.build_all()
+        rulebook.build_all()
 
         self.console.print("Rendering pass complete - all artifacts built!")
