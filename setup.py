@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hyrontools",
-    version="0.0.1",
+    version="1.0.0",
     author="Jacob Neil Taylor",
     author_email="me@jacobtaylor.id.au",
     description="Hyron CLI Tools",
@@ -14,6 +14,11 @@ setuptools.setup(
     url="https://github.com/jacobneiltaylor/hyrontools",
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
+    package_data={
+        "hyrontools": [
+            "assets/*"
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",  # noqa
