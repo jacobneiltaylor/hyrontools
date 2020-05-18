@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hyrontools",
-    version="1.0.0",
+    version="1.0.1",
     author="Jacob Neil Taylor",
     author_email="me@jacobtaylor.id.au",
     description="Hyron CLI Tools",
