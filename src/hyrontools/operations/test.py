@@ -17,7 +17,7 @@ class TestRulebook(Operation, register="test"):
             "rulebook": loader.load(args[0])
         }
 
-    def run(self, rulebook: hyron.rulebooks.Rulebook, artifact: str):
+    def run(self, rulebook: hyron.rulebooks.Rulebook):
         self.console.print("Rendering all artifacts...")
 
         rulebook.build_all()
